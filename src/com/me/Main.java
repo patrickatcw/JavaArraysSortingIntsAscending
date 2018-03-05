@@ -24,19 +24,28 @@ public class Main {
         //step 2 create int array
         int[] myIntegers = getIntegers(4);
 
-
     }
 
     //step 3 method to get ints, from step 2
-    public static int[] getIntegers(int capacity) {
-        int[] array = new int[capacity];    //defining our array
-        System.out.println("Enter " + capacity + " integer values: \r");
-        for (int i = 0; i < array.length; i++) {
+    public static int[] getIntegers(int capacity) {     //parameter in method name
+        int[] array = new int[capacity];                //defining our array, not capacity
+        System.out.println("Enter " + capacity + " integer values: \r"); //r is for input in console
+        for (int i = 0; i < array.length; i++) {        //looping through array
             array[i] = scanner.nextInt();  //for console input
         }
 
         //step 4 return array step 2, step 3
         return array;
     }
+
+    //step 5 next create print array method
+    //for step 2, step 3, step 4
+    public static void printArray(int[] array) {
+        for(int i = 0; i < array.length; i++ ) {        //looping through to print array
+            //System.out.println("Element " + i + " contents " + array[i]);
+        }
+
+    }
+
 
 }
