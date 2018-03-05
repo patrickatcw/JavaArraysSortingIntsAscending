@@ -11,8 +11,8 @@ and sortIntegers should sort the array and return a new array containing the sor
 array and sort them and return the new sorted array
  */
 
+
 //step 1
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -23,9 +23,11 @@ public class Main {
     public static void main(String[] args) {
 
         //step 2 create int array
-        int[] myIntegers = getIntegers(4);
+        int[] myIntegers = getIntegers(5);
 
-
+        //step 9 after method 6 sortIntegers
+        int[] sorted = sortIntegers(myIntegers);
+        printArray(sorted);    //then run
 
     }
 
@@ -46,7 +48,7 @@ public class Main {
     //for step 2, step 3, step 4
     public static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {        //looping through to print array
-            //System.out.println("Element " + i + " contents " + array[i]);
+            System.out.println("Element " + i + " contents " + array[i]);
         }
 
     }
