@@ -21,12 +21,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-
+        //step 2 create int array
+        int[] myIntegers = getIntegers(4);
 
 
     }
 
+    //step 3 method to get ints, from step 2
+    public static int[] getIntegers(int capacity) {
+        int[] array = new int[capacity];    //defining our array
+        System.out.println("Enter " + capacity + " integer values: \r");
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt();  //for console input
+        }
 
-
+        //step 4 return array step 2, step 3
+        return array;
+    }
 
 }
