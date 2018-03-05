@@ -70,7 +70,7 @@ public class Main {
             //checking code
             //loop will continue only after all have been sorted in order desired
             for (int i = 0; i < sortedArray.length - 1; i++) {
-                if (sortedArray[i] > sortedArray[i + 1]) {  //swapping ints
+                if (sortedArray[i] > sortedArray[i + 1]) {  //swapping ints, ***important for order
                     temp = sortedArray[i];  //stores current value of sorted array temporarily
                     sortedArray[i] = sortedArray[i + 1];
                     sortedArray[i + 1] = temp;
@@ -86,3 +86,18 @@ public class Main {
     }
 
 }
+
+//example results;
+/*
+Enter 5 integer values:
+9
+8
+7
+6
+5
+Element 0 contents 5
+Element 1 contents 6
+Element 2 contents 7
+Element 3 contents 8
+Element 4 contents 9
+ */
